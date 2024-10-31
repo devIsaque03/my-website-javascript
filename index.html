@@ -6,24 +6,31 @@
     <title>Personal management</title>
 
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header>
-        <img src="./img/favicon.ico" height="50px">
+        <img src="./assets/img/favicon.ico" height="50px">
         
         <h1>
-            Personal management
+            Personal Management
         </h1>
     </header>
 
     <form>
-        <input type="email" name="login" placeholder="EMAIL" required=""/>
-        <input type="password" name="password" placeholder="PASSWORD" required/>
-        <button>LOGIN</button>
-        <a href="./main.html">
-            LOGIN
-        </a>
-
+        <div class="containerform">
+            <div class="containerinput">
+                <input type="email" name="login" placeholder="EMAIL" required=""/>
+                <input type="password" name="password" placeholder="PASSWORD" required/>
+            </div>
+            <div class="containerbutton">
+                <button>LOGIN</button>
+                <a href="./main.html">
+                    LOGIN
+                </a>
+            </div>
+        </div>
     </form>
 
     <footer> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
