@@ -18,7 +18,11 @@ header {
     align-items: center;
     background-color: green;
     color:aqua;
-    padding-bottom: 10px;
+    height: 9.7vh;
+}
+
+header h1 {
+    margin-left: 5px;
 }
 
 .containerform {
@@ -99,7 +103,9 @@ footer {
     display: flex;
     width: 100%;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: #333;
     color: #f9f9f9;
+    height: 6.2vh;
 }
