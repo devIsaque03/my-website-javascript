@@ -1,0 +1,110 @@
+.containerinit {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.settings {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.containertimeline {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.tabletimeline {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabletimeline tr:hover {
+    background-color: #ddd;
+}
+
+.tabletimeline td {
+    padding-top: 3px;
+}
+
+.containertasks {
+    margin-left: 10px;
+    width: 250px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.containertasks ul {
+    padding-top: 10px;
+    list-style: none;
+}
+
+.body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.academy {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 350px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+.containersubtitleacademy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.academy button {
+    background-color: rgb(211, 211, 211);
+    border: none;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.academy button:hover {
+    background-color: #ddd;
+}
+
+.academy ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.listtraining li {
+    margin-top: 5px;
+}
+
+input[type="checkbox"]:checked + label {
+    border: none;
+}
+
+.academy h4 {
+    margin: 10px
+}
+
+.containerbutton {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+

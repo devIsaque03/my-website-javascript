@@ -6,7 +6,8 @@
     <title>Personal management</title>
 
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-    <link rel="stylesheet" href="../css/main.module.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/first.css">
     
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,11 +17,13 @@
 </head>
 <body>
     <header>
-        <img src="./img/favicon.ico" height="50px">
+        <div class="containertitle">
+            <img src="../img/favicon.ico" height="50px">
         
-        <h1>
-            Personal management
-        </h1>
+            <h1>
+                Personal management
+            </h1>
+        </div>
 
         <nav>
             <ul>
@@ -53,179 +56,197 @@
         </nav>
     </header>
 
-    <hr>
+    <div class="containerinit">
+        <h1>Thursday, Day 24, October 2024 [ 07:34 AM ]</h1>
 
-    <h1>Thursday, Day 24, October 2024 [ 07:34 AM ]</h1>
-    
-    <div name="settings"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-        <a href="">
-            <img src="./img/profile.png" height="50px"/>
-        </a>
-        <a href="">
-        <img src="./img/settings.png" height="50px"/>            
-        </a>
-
+       
+        <div name="settings" class="settings"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+            <a href="">
+                <img src="../img/profile.png" height="50px"/>
+            </a>
+            <a href="">
+                <img src="../img/settings.png" height="50px"/>            
+            </a>
+        </div>
     </div>
 
-    <div name="timeline"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-        <h1>Timeline</h1>
-        <ul>
-            <li>
-                <p>07:30 AM -> wake up</p>
-            </li>
-            <li>
-                <p>07:35 AM -> make the bed</p>
-            </li>
-            <li>
-                <p>07:50 AM -> have coffee</p>
-            </li>
-            <li>
-                <p>08:00 AM -> study</p>
-            </li>
-            <li>
-                <p>...</p>
-            </li>
-        </ul>
-
+    <div class="body">
+        <div class="column1">
+            <div name="timeline" class="containertimeline"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                <table class="tabletimeline">
+                    <thead>
+                        <tr>
+                            <h1>Timeline</h1>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>07:30am</b></td><td><b>Wake up</b></td>
+                        </tr>
+                        <tr >
+                            <td>07:35am</td><td>Make the bed</td>
+                        </tr>
+                        <tr]>
+                            <td>07:50am</td><td>Have coffee</td>
+                        </tr>
+                        <tr]>
+                            <td>08:00am</td><td>Study</td>
+                        </tr>
+                        <tr>
+                            <td>more...</td><td></td>
+                        </tr>
+                    </tbody>
         
-    </div>
+                </table>
+            </div>
+        
+            <div name="tasks" class="containertasks"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                <h1>Tasks</h1>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="tasks1" name="tasks1">
+                        <label for="tasks1">Talk to the Redhead</label> <br>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tasks2" name="tasks2">
+                        <label for="tasks2">Inflate the car tire</label> <br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="column2">
+            <div name="academy" class="academy"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                <h1>Training</h1>
+                <div class="containersubtitleacademy">
+                    <h3>Leg Day (later) - Training A</h3>
+        
+                    <button>Reset</button>
+                </div>
 
-    <div name="tasks"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-        <h1>Tasks</h1>
-        <ul>
-            <li>
-                <input type="checkbox" id="tasks1" name="tasks1">
-                <label for="tasks1">Talk to the Redhead</label> <br>
-            </li>
-            <li>
-                <input type="checkbox" id="tasks2" name="tasks2">
-                <label for="tasks2">inflate the car tire</label> <br>
-            </li>
-        </ul>
-    </div>
-
-    <div name="academy"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-        <h1>Training</h1>
-        <h3>Leg Day (later) - Training A</h3>
-
-        <p>Reset</p>
-
-        <ul>
-            <li>
-                <input type="checkbox" id="training1" name="training1">
-                <label for="training1">Leg curl chair 4 x 15 😁</label> <br>
-                <label for="weight1">weight:</label>
-                <input id="weight1" name="weight1" placeholder="45">
-            </li>
-            <li>
-                <input type="checkbox" id="training2" name="training2">
-                <label for="training2">Abductor chair 4 x 15 😁</label> <br>
-                <label for="weight2">weight:</label>
-                <input id="weight2" placeholder="35">
-            </li>
-            <li>
-                <input type="checkbox" id="training3" name="training3">
-                <label for="training3">Flex table 4 x 15 😁</label> <br>
-                <label for="weight3">weight:</label>
-                <input id="weight3" placeholder="25">
-            </li>
-            <li>
-                <input type="checkbox" id="training4" name="training4">
-                <label for="training4">Sink 4 x 15 🥵</label> <br>
-                <label for="weight4">weight:</label>
-                <input id="weight4" placeholder="0">
-            </li>
-            <li>
-                <input type="checkbox" id="training5" name="training5">
-                <label for="training5">Pelvic elevation 4 x 15 😅</label> <br>
-                <label for="weight5">weight:</label>
-                <input id="weight5" placeholder="0">
-            </li>
-        </ul>
-
-        <h4>Stretching</h4>
-        <ul>
-            <li>
-                <input type="checkbox" id="stretching1" name="stretching1">
-                <label for="stretching1">Biceps stretch</label>
-            </li>
-            <li>
-                <input type="checkbox" id="stretching2" name="stretching2">
-                <label for="stretching2">Lat stretch</label>
-            </li>
-            <li>
-                <input type="checkbox" id="stretching3" name="stretching3">
-                <label for="stretching3">Lnee stretch</label>
-            </li>
-        </ul>
-
-        <p>To update</p>
-    </div>
-
-    <div name="summaryGoals"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-        <h1>Goals</h1>
-
-        <ul>
-            <li>
-                <h3>Wage: 1.755 US$</h3>
-                <p>Progress: 0%</p>
-            </li>
-            <li>
-                <h3>Buy a house [Add 8771 US$]</h3>
-                <p>Progress: 0%</p>
-            </li>
-            <li>
-                <h3>Living off investments [20 minimum wage]</h3>
-                <p>Progress: 0%</p>
-            </li>
-        </ul>
-    </div>
-
-    <div name="summaryFinancial"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-        <h1>Financial</h1>
-
-        <ul>
-            <li>
-                <h3>Gross Equity</h3>
-                <span name="money1">US$</span>
-                <span name="number1">0</span>
-            </li>
-            <li>
-                <h3>financial assets</h3>
-                <span name="money2">US$</span>
-                <span name="number2">0</span>
-            </li>
-            <li>
-                <h3>balance</h3>
-                <span name="money3">US$</span>
-                <span name="number3">0</span>
-            </li>
-            <li>
-                <h3>Accounts receivable</h3>
-                <span name="money4">US$</span>
-                <span name="number4">0</span>
-            </li>
-            <li>
-                <h3>Accounts payable</h3>
-                <span name="money5">US$</span>
-                <span name="number5">0</span>
-            </li>
-            <li>
-                <h3>Investments</h3>
-                <span name="money5">US$</span>
-                <span name="number5">1038.66</span>
-            </li>
-            <li>
-                <h3>Dividends</h3>
-                <span name="money4">US$</span>
-                <span name="number4">25.97</span>                
-            </li>
-            <li>
-                <h3>Valuation [Investments]</h3>
-                <span name="money4">US$</span>
-                <span name="number4">0</span>                
-            </li>
-        </ul>
+                <ul class="listtraining">
+                    <li>
+                        <input type="checkbox" id="training1" name="training1" class="training">
+                        <label for="training1">Leg curl chair 4 x 15 😁</label> <br>
+                        <label for="weight1">weight:</label>
+                        <input id="weight1" name="weight1" placeholder="45" class="weight">
+                    </li>
+                    <li>
+                        <input type="checkbox" id="training2" name="training2">
+                        <label for="training2">Abductor chair 4 x 15 😁</label> <br>
+                        <label for="weight2">weight:</label>
+                        <input id="weight2" placeholder="35">
+                    </li>
+                    <li>
+                        <input type="checkbox" id="training3" name="training3">
+                        <label for="training3">Flex table 4 x 15 😁</label> <br>
+                        <label for="weight3">weight:</label>
+                        <input id="weight3" placeholder="25">
+                    </li>
+                    <li>
+                        <input type="checkbox" id="training4" name="training4">
+                        <label for="training4">Sink 4 x 15 🥵</label> <br>
+                        <label for="weight4">weight:</label>
+                        <input id="weight4" placeholder="0">
+                    </li>
+                    <li>
+                        <input type="checkbox" id="training5" name="training5">
+                        <label for="training5">Pelvic elevation 4 x 15 😅</label> <br>
+                        <label for="weight5">weight:</label>
+                        <input id="weight5" placeholder="0">
+                    </li>
+                </ul>
+        
+                <h4>Stretching</h4>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="stretching1" name="stretching1">
+                        <label for="stretching1">Biceps stretch</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="stretching2" name="stretching2">
+                        <label for="stretching2">Lat stretch</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="stretching3" name="stretching3">
+                        <label for="stretching3">Lnee stretch</label>
+                    </li>
+                </ul>
+        
+                <div class="containerbutton">
+                    <button>To update</button>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="column3">
+            <div name="summaryFinancial"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                <h1>Financial</h1>
+        
+                <ul>
+                    <li>
+                        <h3>Gross Equity</h3>
+                        <span name="money1">US$</span>
+                        <span name="number1">0</span>
+                    </li>
+                    <li>
+                        <h3>financial assets</h3>
+                        <span name="money2">US$</span>
+                        <span name="number2">0</span>
+                    </li>
+                    <li>
+                        <h3>balance</h3>
+                        <span name="money3">US$</span>
+                        <span name="number3">0</span>
+                    </li>
+                    <li>
+                        <h3>Accounts receivable</h3>
+                        <span name="money4">US$</span>
+                        <span name="number4">0</span>
+                    </li>
+                    <li>
+                        <h3>Accounts payable</h3>
+                        <span name="money5">US$</span>
+                        <span name="number5">0</span>
+                    </li>
+                    <li>
+                        <h3>Investments</h3>
+                        <span name="money5">US$</span>
+                        <span name="number5">1038.66</span>
+                    </li>
+                    <li>
+                        <h3>Dividends</h3>
+                        <span name="money4">US$</span>
+                        <span name="number4">25.97</span>                
+                    </li>
+                    <li>
+                        <h3>Valuation [Investments]</h3>
+                        <span name="money4">US$</span>
+                        <span name="number4">0</span>                
+                    </li>
+                </ul>
+            </div>
+    
+            <div name="summaryGoals"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                <h1>Goals</h1>
+        
+                <ul>
+                    <li>
+                        <h3>Wage: 1.755 US$</h3>
+                        <p>Progress: 0%</p>
+                    </li>
+                    <li>
+                        <h3>Buy a house [Add 8771 US$]</h3>
+                        <p>Progress: 0%</p>
+                    </li>
+                    <li>
+                        <h3>Living off investments [20 minimum wage]</h3>
+                        <p>Progress: 0%</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <footer> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
@@ -233,7 +254,7 @@
         <ul>
             <li>
                 <a href="">
-                    <img src="./img/whatsapp.png" height="50px"/>
+                    <img src="../img/whatsapp.png" height="50px"/>
                 </a>
             </li>
             <li>
@@ -248,7 +269,7 @@
             </li>
         </ul>
         
-        <p><span>Personal management</span> &copy; 2024</p>
+        <p><span>Personal management</span> &copy; 2024 - Feito por Isaque Samuel</p>
         
     </footer>
 
