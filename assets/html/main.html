@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/first.css">
+    <link rel="stylesheet" href="../css/styleinput.css">
     
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -128,37 +129,37 @@
                     <li>
                         <input type="checkbox" id="training1" name="training1" class="training">
                         <label for="training1">Leg curl chair 4 x 15 😁</label> <br>
-                        <label for="weight1">weight:</label>
+                        <label for="weight1">Weight:</label>
                         <input id="weight1" name="weight1" placeholder="45" class="weight">
                     </li>
                     <li>
                         <input type="checkbox" id="training2" name="training2">
                         <label for="training2">Abductor chair 4 x 15 😁</label> <br>
-                        <label for="weight2">weight:</label>
+                        <label for="weight2">Weight:</label>
                         <input id="weight2" placeholder="35">
                     </li>
                     <li>
                         <input type="checkbox" id="training3" name="training3">
                         <label for="training3">Flex table 4 x 15 😁</label> <br>
-                        <label for="weight3">weight:</label>
+                        <label for="weight3">Weight:</label>
                         <input id="weight3" placeholder="25">
                     </li>
                     <li>
                         <input type="checkbox" id="training4" name="training4">
                         <label for="training4">Sink 4 x 15 🥵</label> <br>
-                        <label for="weight4">weight:</label>
+                        <label for="weight4">Weight:</label>
                         <input id="weight4" placeholder="0">
                     </li>
                     <li>
                         <input type="checkbox" id="training5" name="training5">
                         <label for="training5">Pelvic elevation 4 x 15 😅</label> <br>
-                        <label for="weight5">weight:</label>
+                        <label for="weight5">Weight:</label>
                         <input id="weight5" placeholder="0">
                     </li>
                 </ul>
         
                 <h4>Stretching</h4>
-                <ul>
+                <ul class="containerstretching">
                     <li>
                         <input type="checkbox" id="stretching1" name="stretching1">
                         <label for="stretching1">Biceps stretch</label>
@@ -172,6 +173,7 @@
                         <label for="stretching3">Lnee stretch</label>
                     </li>
                 </ul>
+
         
                 <div class="containerbutton">
                     <button>To update</button>
@@ -181,50 +183,76 @@
         </div>
     
         <div class="column3">
-            <div name="summaryFinancial"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+            <div name="summaryFinancial" class="summaryFinancial"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
                 <h1>Financial</h1>
         
                 <ul>
-                    <li>
-                        <h3>Gross Equity</h3>
-                        <span name="money1">US$</span>
-                        <span name="number1">0</span>
-                    </li>
-                    <li>
-                        <h3>financial assets</h3>
-                        <span name="money2">US$</span>
-                        <span name="number2">0</span>
-                    </li>
-                    <li>
-                        <h3>balance</h3>
-                        <span name="money3">US$</span>
-                        <span name="number3">0</span>
-                    </li>
-                    <li>
-                        <h3>Accounts receivable</h3>
-                        <span name="money4">US$</span>
-                        <span name="number4">0</span>
-                    </li>
-                    <li>
-                        <h3>Accounts payable</h3>
-                        <span name="money5">US$</span>
-                        <span name="number5">0</span>
-                    </li>
-                    <li>
-                        <h3>Investments</h3>
-                        <span name="money5">US$</span>
-                        <span name="number5">1038.66</span>
-                    </li>
-                    <li>
-                        <h3>Dividends</h3>
-                        <span name="money4">US$</span>
-                        <span name="number4">25.97</span>                
-                    </li>
-                    <li>
-                        <h3>Valuation [Investments]</h3>
-                        <span name="money4">US$</span>
-                        <span name="number4">0</span>                
-                    </li>
+                    <div class="containerfinance1">
+                        <li>
+                            <h3>Gross Equity</h3>
+                            <p>
+                                <span name="money1">US$</span>
+                                <span name="number1" class="numbers">0</span>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>financial assets</h3>
+                            <p>
+                                <span name="money2">US$</span>
+                                <span name="number2"  class="numbers">0</span>
+                            </p>
+                        </li>
+                    </div>
+                    <div class="containerfinance2">
+                        <li>
+                            <h3>balance</h3>
+                            <P>
+                                <span name="money3">US$</span>
+                                <span name="number3"  class="numbers">0</span>
+                            </P>
+                        </li>
+                    </div>
+                    <div class="containerfinance3">
+                        <li>
+                            <h3>Acc receivable</h3>
+                            <p>
+                                <span name="money4">US$</span>
+                                <span name="number4"  class="numbers">0</span>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Acc payable</h3>
+                            <p>
+                                <span name="money5">US$</span>
+                                <span name="number5"  class="numbers">0</span>
+                            </p>
+                        </li>
+                    </div>
+                    <div class="containerfinance4">
+                        <li>
+                            <h3>Valuation [Investments]</h3>
+                            <p>
+                                <span name="money4">US$</span>
+                                <span name="number4" class="numbers">0</span>  
+                            </p>
+                        </li>
+                    </div>
+                    <div class="containerfinance5">
+                        <li>
+                            <h3>Investments</h3>
+                            <p>
+                                <span name="money5">US$</span>
+                                <span name="number5"  class="numbers">1038.66</span>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Dividends</h3>
+                            <p>
+                                <span name="money4">US$</span>
+                                <span name="number4" class="numbers">25.97</span> 
+                            </p>
+                        </li>
+                    </div>
                 </ul>
             </div>
     

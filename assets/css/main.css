@@ -47,6 +47,10 @@
     list-style: none;
 }
 
+.containertasks ul li {
+    margin-bottom: 10px;
+}
+
 .body {
     display: flex;
     width: 100%;
@@ -87,19 +91,80 @@
     margin-top: 5px;
 }
 
-input[type="checkbox"]:checked + label {
-    border: none;
-}
 
 .academy h4 {
     margin: 10px
+}
+
+.academy input {
+    border: none;
+    background-color: rgb(211, 211, 211);
+}
+
+.academy input:focus {
+    outline: none;
+}
+
+.containerstretching li {
+    margin-bottom: 10px;
 }
 
 .containerbutton {
     text-align: right;
 }
 
+.summaryFinancial {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 350px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
 
+.summaryFinancial ul {
+    list-style-type: none;
+}
+
+.summaryFinancial li {
+    min-width: 40%;
+    max-width: 50%;
+    background-color: #5f5f5f;
+    color: #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.summaryFinancial li p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerfinance1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerfinance2 {
+    display: flex;
+    justify-content: center;
+}
+
+.containerfinance3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerfinance4 {
+    display: flex;
+    justify-content: center;
+}
+
+.containerfinance5 {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
