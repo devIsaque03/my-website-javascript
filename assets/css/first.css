@@ -64,6 +64,22 @@ nav ul li a:hover {
     border-bottom: 5px solid aqua;
 }
 
+.containerinit {
+    display: flex;
+    width: 100%;
+    justify-content: space-between ;
+    padding-top: 10px;
+    background-color: rgb(226, 226, 226);
+}
+
+.settings {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+    padding-right: 20px;
+    background-color: rgb(226, 226, 226);
+}
+
 footer {
     display: flex;
     flex-direction: column;
