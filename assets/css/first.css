@@ -9,7 +9,7 @@ html, body {
     width: 100%;
     font-family: "Roboto", Arial, sans-serif;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: rgb(226, 226, 226);
 }
 
 header {
