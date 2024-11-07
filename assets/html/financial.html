@@ -7,6 +7,7 @@
 
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/first.css">
+    <link rel="stylesheet" href="../css/financial.css">
 
 </head>
 <body> <!-- Dolar valendo R$ 5.78-->
@@ -50,96 +51,113 @@
         </nav>
     </header>
 
-    <hr>
+    <div class="containerinit">
+        <h1>Thursday, Day 24, October 2024 [ 07:34 AM ]</h1>
 
-    <h1>Thursday, Day 24, October 2024 [ 07:34 AM ]</h1>
-
-    <div name="settings"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-        <a href="">
-            <img src="./img/profile.png" height="50px"/>
-        </a>
-        <a href="">
-            <img src="./img/settings.png" height="50px"/>            
-        </a>
+       
+        <div name="settings" class="settings"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+            <a href="">
+                <img src="../img/profile.png" height="50px"/>
+            </a>
+            <a href="">
+                <img src="../img/settings.png" height="50px"/>            
+            </a>
+        </div>
     </div>
 
-    <h3>Financial</h3>
+    <div name="summaryFinancial" class="summaryFinancial"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+        <h1>Financial</h1>
 
-    <section>
-        <div>
-            <p>Financial Assets: </p>
-            <p>0 US$</p>
-        </div>
+        <ul>
+            <div class="containerfinance1">
+                <li>
+                    <h3>Gross Equity</h3>
+                    <p>
+                        <span name="money1">R$</span>
+                        <span name="number1" class="numbers">0.00</span>
+                    </p>
+                </li>
+                <li>
+                    <h3>financial assets</h3>
+                    <p>
+                        <span name="money2">R$</span>
+                        <span name="number2"  class="numbers">0.00</span>
+                    </p>
+                </li>
+            </div>
+            <div class="containerfinance2">
+                <li>
+                    <h3>balance</h3>
+                    <P>
+                        <span name="money3">R$</span>
+                        <span name="number3"  class="numbers">0.00</span>
+                    </P>
+                </li>
+                <li>
+                    <h3>invested</h3>
+                    <p>
+                        <span name="money4">R$</span>
+                        <span name="number4" class="numbers">5.000</span>  
+                    </p>
+                </li>
+            </div>
+            <div class="containerfinance3">
+                <li>
+                    <h3>Acc receivable</h3>
+                    <p>
+                        <span name="money4">R$</span>
+                        <span name="number4"  class="numbers">0.00</span>
+                    </p>
+                </li>
+                <li>
+                    <h3>Acc payable</h3>
+                    <p>
+                        <span name="money5">R$</span>
+                        <span name="number5"  class="numbers">0.00</span>
+                    </p>
+                </li>
+            </div>
+            <div class="containerfinance5">
+                <li>
+                    <h3>Appreciation</h3>
+                    <p>
+                        <span name="money5">R$</span>
+                        <span name="number5"  class="numbers">125.00</span>
+                    </p>
+                </li>
+                <li>
+                    <h3>Dividends</h3>
+                    <p>
+                        <span name="money4">R$</span>
+                        <span name="number4" class="numbers">0.00</span> 
+                    </p>
+                </li>
+            </div>
+        </ul>
+    </div>
 
-        <div>
-            <p>Balance: </p>
-            <p>0 US$</p>
-        </div>
-
-        <div>
-            <p>Accounts receivable:</p>
-            <p>28 US$</p>
-        </div>
-
-        <div>
-            <p>Money earned: </p>
-            <P>0 US$</P>
-        </div>
-
-        <div>
-            <p>Accounts payable</p>
-            <P>90 US$</P>
-        </div>
-
-        <div>
-            <p>Money spent: </p>
-            <p>170.27 US$</p>
-        </div>
-
+    <section class="graficos">
+        <p>Gráficos</p>
     </section>
 
-    <section>
-        <div>
-            <p>Total invested: </p>
-            <p>1038.66 US$</p>
+    <section class="containermovements"> <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <div class="containerconfig">
+            <h1>Movement</h1>
+            <div>
+                <button><img src="../img/settings.png" height="50px"></button>
+                <button><img src="../img/add.png" height="50px"></button>
+            </div>
         </div>
 
-        <div>
-            <p>Total return: </p>
-            <P>25.97 US$</P>
-        </div>
-
-        <div>
-            <p>Valuation: </p>
-            <P>On average: 2.5% </P>
-            <P>25.97 US$</P>
-        </div>
-
-        <div>
-            <p>Dividends: </p>
-            <p>0 US$</p>
-        </div>
-    </section>
-
-    <section> <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
         <table>
             <thead>
-                <tr>
-                    <th>Movement</th>
-                    <div>
-                        <th><button><img src="./img/settings.png" height="50px"></button></th>
-                        <th><button><img src="./img/add.png" height="50px"></button></th>
-                    </div>
-
-                </tr>
-                <tr>
-                    <th>Date<br>________________</th>
-                    <th>Object<br>________________</th>
-                    <th>Description<br>________________</th>
-                    <th>Source<br>________________</th>
-                    <th>Payment method<br>________________</th>
-                    <th>Value<br>________________</th>
-                    <th>remaining balance<br>________________</th>
+                <tr class="tabletitle">
+                    <th class="date">Date</th>
+                    <th class="object">Object</th>
+                    <th class="description">Description</th>
+                    <th class="source">Source</th>
+                    <th class="paymentmethod">Payment method</th>
+                    <th class="value">Value</th>
                 </tr>
             </thead>
             <tbody>
@@ -147,10 +165,9 @@
                     <td>03/10/2024</td>
                     <td>Game</td>
                     <td>Buying "Subsistence"</td>
-                    <td>Nubank</td>
+                    <td>Nubank</td> 
                     <td>Pix</td>
-                    <td>- 7.70 US$</td>
-                    <td>+ 209.73 US$</td>
+                    <td class="money"><span>R$</span><span>- 7.70</span></td>
                 </tr>
                 <tr>
                     <td>05/10/2024</td>
@@ -158,8 +175,7 @@
                     <td>Filling up the car</td>
                     <td>Nubank</td>
                     <td>Debit</td>
-                    <td>- 32.60 US$</td>
-                    <td>+ 177.13 US$</td>
+                    <td class="money"><span>R$</span><span>- 32.60</span></td>
                 </tr>
                 <tr>
                     <td>07/10/2024</td>
@@ -167,8 +183,7 @@
                     <td>No description for now</td>
                     <td>Nubank</td>
                     <td>Pix</td>
-                    <td>- 44.16 US$</td>
-                    <td>+ 132.96 US$</td>
+                    <td class="money"><span>R$</span><span>- 44.16</span></td>
                 </tr>
                 <tr>
                     <td>07/10/2024</td>
@@ -176,8 +191,7 @@
                     <td>Monthly fee</td>
                     <td>Nubank</td>
                     <td>Pix</td>
-                    <td>- 14.19 US$</td>
-                    <td>+ 118.77 US$</td>
+                    <td class="money"><span>R$</span><span>- 14.19</span></td>
                 </tr>
                 <tr>
                     <td>12/10/2024</td>
@@ -185,8 +199,7 @@
                     <td>Eating with your girlfriend at the bakery</td>
                     <td>Nubank</td>
                     <td>Pix</td>
-                    <td>- 2.07 US$</td>
-                    <td>+ 116.70 US$</td>
+                    <td class="money"><span>R$</span><span>- 2.07</span></td>
                 </tr>
                 <tr>
                     <td>12/10/2024</td>
@@ -194,8 +207,7 @@
                     <td>Pay the TOM</td>
                     <td>Nubank</td>
                     <td>Pix</td>
-                    <td>- 3.12 US$</td>
-                    <td>+ 113.58 US$</td>
+                    <td class="money"><span>R$</span><span>- 3.12</span></td>
                 </tr>
                 <tr>
                     <td>16/10/2024</td>
@@ -203,8 +215,7 @@
                     <td>Sister-in-law's birthday</td>
                     <td>Nubank</td>
                     <td>Pix</td>
-                    <td>- 13.33 US$</td>
-                    <td>+ 100.25 US$ </td>
+                    <td class="money"><span>R$</span><span>- 13.33</span></td>
                 </tr>
                 <tr>
                     <td>19/10/2024</td>
@@ -212,8 +223,7 @@
                     <td>Filling up the car</td>
                     <td>Nubank</td>
                     <td>Debit</td>
-                    <td>- 26.35 US$</td>
-                    <td>+ 73.90 US$</td>
+                    <td class="money"><span>R$</span><span>- 26.35</span></td>
                 </tr>
                 <tr>
                     <td>28/10/2024</td>
@@ -221,21 +231,16 @@
                     <td>College tuition</td>
                     <td>Nubank</td>
                     <td>Pix</td>
-                    <td>- 34.45 US$</td>
-                    <td>+ 39.46 US$</td>
+                    <td class="money"><span>R$</span><span>- 34.45</span></td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    <section>
+    <section class="report">
         <a href="">
-            <p>report</p>
+            <p>Report</p>
         </a>
-    </section>
-
-    <section>
-        <p>Gráficos</p>
     </section>
 
     <footer> <!-- --------------------------------------------------------------------------------------------------------------------------- -->

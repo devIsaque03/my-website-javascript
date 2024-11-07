@@ -1,4 +1,9 @@
-
+.column {
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
 
 .containertimeline {
     margin-left: 10px;
@@ -42,8 +47,9 @@
 .body {
     display: flex;
     width: 100%;
-    justify-content: left;
+    justify-content: space-between;
     background-color: rgb(226, 226, 226);
+    flex-wrap: wrap;
 }
 
 .academy {

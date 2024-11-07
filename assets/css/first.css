@@ -70,6 +70,7 @@ nav ul li a:hover {
     justify-content: space-between ;
     padding-top: 10px;
     background-color: rgb(226, 226, 226);
+    padding-left: 10px;
 }
 
 .settings {
@@ -78,6 +79,17 @@ nav ul li a:hover {
     justify-content: space-between;
     padding-right: 20px;
     background-color: rgb(226, 226, 226);
+    margin-right: 20px;
+}
+
+.settings a {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.settings a:hover {
+    background-color: #cfcfcf;
+    border-radius: 25px;
 }
 
 footer {

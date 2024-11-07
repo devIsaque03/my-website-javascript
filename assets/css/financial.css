@@ -1,0 +1,125 @@
+.summaryFinancial {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 10px 30px 10px;
+}
+
+.summaryFinancial ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.summaryFinancial li {
+    margin-bottom: 20px;
+}
+
+.summaryFinancial li p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerfinance1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.containerfinance2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.containerfinance3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.containerfinance4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerfinance5 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.containermovements {
+    padding-left: 10px;
+    width: 100%;
+    border-top: 2px solid black;
+    padding-top: 30px;
+}
+
+.containermovements table {
+    width: 100%;
+}
+
+.containerconfig {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerconfig button {
+    margin-right: 20px;
+    border: none;
+    padding: 5px;
+    background-color: rgb(226, 226, 226);
+}
+
+.containerconfig button:hover {
+    background-color: #cfcfcf;
+    border-radius: 25px;
+}
+
+.tabletitle {
+    text-align: left;
+}
+
+.date {
+    width: 90px;
+}
+
+.source {
+    width: 70px;
+}
+
+.paymentmethod {
+    width: 140px;
+}
+
+.money {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.report {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.report a:hover {
+    background-color: #cfcfcf;
+}
+
+.report a {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.graficos {
+    padding-bottom: 30px;
+}
