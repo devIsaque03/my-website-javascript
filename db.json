@@ -1,0 +1,27 @@
+{
+    "users": [
+        { "id": 1, "username": "Isaque", "email": "isaqueacs7@gmail.com", "password": "admin", "foreignkey": "1234123412"},
+        { "id": 2, "username": "Visitante", "email": "visita@gmail.com", "password": "visit", "foreignkey": "1234512345"}
+    ],
+    "settings": [
+
+    ],
+    "movement": [
+        { "id": 1, "foreignkey": 1234123412}
+    ],
+    "total": [
+
+    ],
+    "trainings": [
+
+    ],
+    "tasks": [
+
+    ],
+    "goals": [
+
+    ],
+    "timeline": [
+
+    ]
+}
