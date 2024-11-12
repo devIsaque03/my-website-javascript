@@ -1,0 +1,113 @@
+.containertitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.containertitle select {
+    margin-right: 20px;
+}
+
+.containermenu {
+    display: flex;
+    align-items: center;
+}
+
+
+.containerbutton {
+    display: flex;
+    margin-right: 20px;
+}
+
+.containerbutton button {
+    padding: 15px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+}
+
+.button01:hover {
+    background-color: #cfcfcf;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.button02:hover {
+    background-color: #cfcfcf;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.day {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.day ul {
+    list-style: none;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.day li {
+    padding-bottom: 10px ;
+    display: flex;
+    align-items: center;
+}
+
+.week {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.week table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-left: 10px; */
+}
+
+.week table tr th {
+    height: 40px;
+}
+
+.week table td {
+    text-align: center;       /* Centraliza o texto horizontalmente */
+    vertical-align: middle;   /* Centraliza o texto verticalmente */
+}
+
+.time {
+    width: 120px;
+}
+
+.monthdisplay {
+    margin-top: 50px;
+}
+
+.monthdisplay table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.year {
+    display: flex;
+    justify-content: space-around; /* Adiciona espaço entre as tabelas */
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.year table{
+    width: 30%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-bottom: 20px;
+}
+
+.year table th {
+    text-align: center;
+}
+
+.year table td {
+    text-align: center;
+}

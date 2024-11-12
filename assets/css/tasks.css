@@ -1,0 +1,66 @@
+.containertasks {
+    display: flex;
+    justify-content: center;
+}
+
+.containeraddtasks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.containeraddtasks input {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.containeraddtasks button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(226, 226, 226);
+    font-weight: 700;
+}
+
+.containertasks ul {
+    list-style: none;
+}
+
+.containertasks button {
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: rgb(226, 226, 226);
+    margin-left: 10px;
+}
+
+.containertasks button:hover {
+    background-color: #cfcfcf;
+}
+
+.containertasks ul button {
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(226, 226, 226);
+    margin-left: 10px;
+    display: none;
+}
+
+.containertasks li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-right: 60px;
+}
+
+.containertasks li:hover {
+    button {
+        display: flex;
+    }
+    padding-right: 0px;
+}

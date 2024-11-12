@@ -9,7 +9,6 @@
     margin-left: 10px;
     margin-bottom: 20px;
     width: 250px;
-    /* background-color: rgb(211, 211, 211); */
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
 }
@@ -30,7 +29,6 @@
 .containertasks {
     margin-left: 10px;
     width: 250px;
-    /* background-color: rgb(211, 211, 211); */
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
 }
@@ -53,10 +51,8 @@
 }
 
 .academy {
-    /* margin-left: 10px; */
     margin-bottom: 20px;
     width: 350px;
-    /* background-color: rgb(211, 211, 211); */
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
 }
@@ -67,8 +63,7 @@
 }
 
 .academy button {
-    /* background-color: rgb(211, 211, 211); */
-background-color: rgb(226, 226, 226);
+    background-color: rgb(226, 226, 226);
     border: none;
     font-weight: 700;
     padding: 5px;
@@ -94,8 +89,7 @@ background-color: rgb(226, 226, 226);
 
 .academy input {
     border: none;
-    /* background-color: rgb(211, 211, 211); */
-background-color: rgb(226, 226, 226);
+    background-color: rgb(226, 226, 226);
 }
 
 .academy input:focus {
@@ -114,7 +108,6 @@ background-color: rgb(226, 226, 226);
     margin-right: 10px;
     margin-bottom: 20px;
     width: 350px;
-    /* background-color: rgb(211, 211, 211); */
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
 }
@@ -162,10 +155,8 @@ background-color: rgb(226, 226, 226);
 }
 
 .summarygoals {
-    /* margin-right: 10px; */
     margin-bottom: 20px;
     width: 340px;
-    /* background-color: rgb(211, 211, 211); */
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
 }

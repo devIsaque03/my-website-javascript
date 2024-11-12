@@ -10,6 +10,13 @@ html, body {
     font-family: "Roboto", Arial, sans-serif;
     color: #333;
     background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.containermain {
+    height: 100vh;
 }
 
 header {
@@ -71,6 +78,7 @@ nav ul li a:hover {
     padding-top: 10px;
     background-color: rgb(226, 226, 226);
     padding-left: 10px;
+    align-items: center;
 }
 
 .settings {
@@ -96,6 +104,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: end;
     background-color: #333;
     color: aqua;
     padding-top: 10px;
@@ -105,7 +114,7 @@ footer {
 footer ul {
     display: flex;
     list-style: none;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     width: 30%;
     justify-content: space-between;
 }

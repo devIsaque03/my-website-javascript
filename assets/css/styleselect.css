@@ -1,0 +1,27 @@
+select {
+    -webkit-appearance: none; /* Para navegadores WebKit */
+    -moz-appearance: none;    /* Para Firefox */
+    appearance: none;
+    background-color: #f0f0f0;
+    padding: 10px;
+    padding-right: 25px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Adicione uma imagem como seta */
+.select-container {
+    position: relative;
+}
+
+.select-container::after {
+    content: "▼"; /* Símbolo da seta */
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 12px;
+    color: #333;
+}

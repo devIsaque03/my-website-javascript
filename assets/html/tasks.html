@@ -7,86 +7,95 @@
 
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/first.css">
+    <link rel="stylesheet" href="../css/styleinput.css">
+    <link rel="stylesheet" href="../css/tasks.css">
 
 </head>
 <body>
-    <header>
-        <div class="containertitle">
-            <img src="../img/favicon.ico" height="50px">
-        
-            <h1>
-                Personal management
-            </h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="./main.html">
-                        Main
-                    </a>
-                </li>
-                <li>
-                    <a href="./academy.html">
-                        Academy
-                    </a>
-                </li>
-                <li>
-                    <a href="./financial.html">
-                        Financial
-                    </a>
-                </li>
-                <li>
-                    <a href="./goals.html">
-                        goals
-                    </a>
-                </li>
-                <li>
-                    <a href="./timeline.html">
-                        Timeline
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <hr>
-
-    <h1>Thursday, Day 24, October 2024 [ 07:34 AM ]</h1>
-
-    <div name="settings"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-        <a href="">
-            <img src="./img/profile.png" height="50px"/>
-        </a>
-        <a href="">
-            <img src="./img/settings.png" height="50px"/>            
-        </a>
-    </div>
-
-    <hr>
-
-    <form>
-        <h3>To-do List</h3>
-
-        <input>
-        <button>Adicionar tarefa</button>
-
-        <hr>
-
-        <ul>
-            <li>
-                <input type="checkbox">
-                <label>Talk to the Redhead</label>
-                <button><img src="./img/trash.png" height="50px"></button>
-            </li>
-            <li>
-                <input type="checkbox">
-                <label>inflate the car tire</label>
-                <button><img src="./img/trash.png" height="50px"></button>
-            </li>
-        </ul>
-    </form>
+    <div class="containermain">
+        <header>
+            <div class="containertitle">
+                <img src="../img/favicon.ico" height="50px">
+            
+                <h1>
+                    Personal management
+                </h1>
+            </div>
     
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./main.html">
+                            Main
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./academy.html">
+                            Academy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./financial.html">
+                            Financial
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./goals.html">
+                            goals
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./timeline.html">
+                            Timeline
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="containerinit">
+            <h1>Thursday, Day 24, October 2024 [ 07:34 AM ]</h1>
+    
+           
+            <div name="settings" class="settings"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+                <a href="">
+                    <img src="../img/profile.png" height="50px"/>
+                </a>
+                <a href="">
+                    <img src="../img/settings.png" height="50px"/>            
+                </a>
+            </div>
+        </div>
+    
+        <div class="containertasks">
+            <form>
+                <div class="containeraddtasks">
+                    <h3>To-do List</h3>
+        
+                    <div>
+                        <input>
+                        <button>Adicionar tarefa</button>
+                    </div>
+                </div>
+    
+                <ul>
+                    <li>
+                        <input type="checkbox" id="tasks01" name="tasks01">
+                        <label for="tasks01">Talk to the Redhead</label>
+                        <button><img src="../img/trash.png" height="30px"></button>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tasks02" name="tasks02">
+                        <label for="tasks02">inflate the car tire</label>
+                        <button><img src="../img/trash.png" height="30px"></button>
+                    </li>
+
+                </ul>
+            </form>
+        </div>
+    </div>
+    
+
     <footer> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
 
         <ul>
