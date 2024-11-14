@@ -1,40 +1,197 @@
 {
-    "users": [
-        { "id": 1, "username": "Isaque", "email": "isaqueacs7@gmail.com", "password": "admin", "foreignkey": "1234123412"},
-        { "id": 2, "username": "Visitante", "email": "visita@gmail.com", "password": "visit", "foreignkey": "1234512345"}
-    ],
-    "settings": [
-
-    ],
-    "Financial": [
-        { "id": 1, "foreignkey": "1234123412", "initbalance": "0"}
-    ],
-    "movement": [
-        { "id": 1, "foreignkey": "1234123412", "day": 3, "month": 10, "year": "2024", "objectId": "Game", "description": "Buying Subsistence", "type": "output", "sourceId": 1, "paymentMethod": "Pix", "value": 45.00},
-        { "id": 2, "foreignkey": "1234123412", "day": 5, "month": 10, "year": "2024", "objectId": "Transport", "description": "Filling up the car", "type": "output", "sourceId": 1, "paymentMethod": "Debit", "value": 187.46},
-        { "id": 3, "foreignkey": "1234123412", "day": 7, "month": 10, "year": "2024", "objectId": "Credit card", "description": "No description for now", "type": "output", "sourceId": 1, "paymentMethod": "Pix", "value": 253.93},
-        { "id": 4, "foreignkey": "1234123412", "day": 7, "month": 10, "year": "2024", "objectId": "Academy", "description": "Monthly fee", "type": "output", "sourceId": 1, "paymentMethod": "Pix", "value": 81.60},
-        { "id": 5, "foreignkey": "1234123412", "day": 12, "month": 10, "year": "2024", "objectId": "Exit", "description": "Eating with your girlfriend at the bakery", "type": "output", "sourceId": 1, "paymentMethod": "Pix", "value": 11.90},
-        { "id": 6, "foreignkey": "1234123412", "day": 12, "month": 10, "year": "2024", "objectId": "IPTV", "description": "Pay the TOM", "type": "output", "sourceId": 1, "paymentMethod": "Pix", "value": 17.94},
-        { "id": 7, "foreignkey": "1234123412", "day": 16, "month": 10, "year": "2024", "objectId": "Exit", "description": "Sister-in-law's birthday", "type": "output", "sourceId": 1, "paymentMethod": "Pix", "value": 76.65},
-        { "id": 8, "foreignkey": "1234123412", "day": 19, "month": 10, "year": "2024", "objectId": "Transport", "description": "Filling up the car", "type": "output", "sourceId": 1, "paymentMethod": "Debit", "value": 151.52},
-        { "id": 9, "foreignkey": "1234123412", "day": 28, "month": 10, "year": "2024", "objectId": "Study", "description": "College tuition", "type": "output", "sourceId": 1, "paymentMethod": "Pix", "value": 198.10}
-    ],
-    "source": [
-        { "id": 1, "foreignkey": "1234123412", "bank": "Nubank", "name": "Nu Current", "pix": true, "debitcard": true, "creditcard": true, "limitedcard": "1750" },
-        { "id": 2, "foreignkey": "1234123412", "bank": "Itau", "name": "Itau savings", "pix": true, "debitcard": true, "creditcard": false, "limitedcard": "0" },
-        { "id": 3, "foreignkey": "1234123412", "bank": "Mercado Pago", "name": "MP trade", "pix": true, "debitcard": true, "creditcard": false, "limitedcard": "0" }
-    ],
-    "trainings": [
-
-    ],
-    "tasks": [
-
-    ],
-    "goals": [
-
-    ],
-    "timeline": [
-
-    ]
+  "users": [
+    {
+      "id": 1,
+      "username": "Isaque",
+      "email": "isaqueacs7@gmail.com",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "username": "Visitante",
+      "email": "visita@gmail.com",
+      "password": "visit"
+    },
+    {
+      "username": "general",
+      "email": "teste@gmail.com",
+      "password": "12341234",
+      "id": "a572"
+    },
+    {
+      "id": "1e68",
+      "username": "teste2",
+      "email": "teste2@gmail.com",
+      "password": "12341234"
+    }
+  ],
+  "code": [
+    {
+      "foreignkey": "1",
+      "code": ""
+    }
+  ],
+  "settings": [],
+  "financial": [
+    {
+      "id": 1,
+      "foreignkey": "1",
+      "initbalance": "0"
+    }
+  ],
+  "movement": [
+    {
+      "id": 1,
+      "foreignkey": "1",
+      "day": 3,
+      "month": 10,
+      "year": "2024",
+      "object": "Game",
+      "description": "Buying Subsistence",
+      "type": "output",
+      "sourceId": 1,
+      "paymentMethod": "Pix",
+      "value": 45
+    },
+    {
+      "id": 2,
+      "foreignkey": "1",
+      "day": 5,
+      "month": 10,
+      "year": "2024",
+      "object": "Transport",
+      "description": "Filling up the car",
+      "type": "output",
+      "sourceId": 1,
+      "paymentMethod": "Debit",
+      "value": 187.46
+    },
+    {
+      "id": 3,
+      "foreignkey": "1",
+      "day": 7,
+      "month": 10,
+      "year": "2024",
+      "object": "Credit card",
+      "description": "No description for now",
+      "type": "output",
+      "sourceId": 1,
+      "paymentMethod": "Pix",
+      "value": 253.93
+    },
+    {
+      "id": 4,
+      "foreignkey": "1",
+      "day": 7,
+      "month": 10,
+      "year": "2024",
+      "object": "Academy",
+      "description": "Monthly fee",
+      "type": "output",
+      "sourceId": 1,
+      "paymentMethod": "Pix",
+      "value": 81.6
+    },
+    {
+      "id": 5,
+      "foreignkey": "1",
+      "day": 12,
+      "month": 10,
+      "year": "2024",
+      "object": "Exit",
+      "description": "Eating with your girlfriend at the bakery",
+      "type": "output",
+      "sourceId": 1,
+      "paymentMethod": "Pix",
+      "value": 11.9
+    },
+    {
+      "id": 6,
+      "foreignkey": "1",
+      "day": 12,
+      "month": 10,
+      "year": "2024",
+      "object": "IPTV",
+      "description": "Pay the TOM",
+      "type": "output",
+      "sourceId": 1,
+      "paymentMethod": "Pix",
+      "value": 17.94
+    },
+    {
+      "id": 7,
+      "foreignkey": "1",
+      "day": 16,
+      "month": 10,
+      "year": "2024",
+      "object": "Exit",
+      "description": "Sister-in-law's birthday",
+      "type": "output",
+      "sourceId": 1,
+      "paymentMethod": "Pix",
+      "value": 76.65
+    },
+    {
+      "id": 8,
+      "foreignkey": "1",
+      "day": 19,
+      "month": 10,
+      "year": "2024",
+      "object": "Transport",
+      "description": "Filling up the car",
+      "type": "output",
+      "sourceId": 1,
+      "paymentMethod": "Debit",
+      "value": 151.52
+    },
+    {
+      "id": 9,
+      "foreignkey": "1",
+      "day": 28,
+      "month": 10,
+      "year": "2024",
+      "object": "Study",
+      "description": "College tuition",
+      "type": "output",
+      "sourceId": 1,
+      "paymentMethod": "Pix",
+      "value": 198.1
+    }
+  ],
+  "source": [
+    {
+      "id": 1,
+      "foreignkey": "1",
+      "bank": "Nubank",
+      "name": "Nu Current",
+      "pix": true,
+      "debitcard": true,
+      "creditcard": true,
+      "limitedcard": "1750"
+    },
+    {
+      "id": 2,
+      "foreignkey": "1",
+      "bank": "Itau",
+      "name": "Itau savings",
+      "pix": true,
+      "debitcard": true,
+      "creditcard": false,
+      "limitedcard": "0"
+    },
+    {
+      "id": 3,
+      "foreignkey": "1",
+      "bank": "Mercado Pago",
+      "name": "MP trade",
+      "pix": true,
+      "debitcard": true,
+      "creditcard": false,
+      "limitedcard": "0"
+    }
+  ],
+  "trainings": [],
+  "tasks": [],
+  "goals": [],
+  "timeline": []
 }

@@ -1,3 +1,15 @@
+/*  Banco de Dados ------------------------------------------------------------------------------------
+users - id, username, email, password, foreignkey
+settings - 
+financial - id, foreignkey, initbalance
+movement - id, foreignkey, day, month, year, object, description, type, sourceId, paymentMethod, value
+source - id, foreignkey, bank, name, pix, debitcard, creditcard, limitedcard
+trainings -
+tasks - 
+goals -
+timeline -
+*/
+
 document.getElementsByTagName('li');
 document.getElementsByClassName('textos');
 document.getElementById('título');
@@ -16,7 +28,7 @@ document.replaceChild(/*new element, old element */) // substitui um elemento
 
 // ------------------------------------------
 
-const meuElemento = document.getElementById("meu-elemento")
+const meuElemento = document.getElementById("meu-elemento").classList.toggle("dark-mode")
 
 meuElemento.classList.add("novo-estilo")
 meuElemento.classList.remove("classe")

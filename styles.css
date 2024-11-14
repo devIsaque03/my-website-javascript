@@ -21,24 +21,71 @@ header {
     height: 9.7vh;
 }
 
+.containerformcreate p {
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+
 header h1 {
     margin-left: 5px;
 }
 
-.containerform {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+form {
     height: 84.1vh;
     background-image: url("./assets/img/management.png");
     background-position: left;
     background-repeat: no-repeat;
 }
 
+.containerformlogin {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 84.1vh;
+}
+
+.containerformcreate {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 84.1vh;
+}
+
+.containerformsendcode {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 84.1vh;
+}
+
+.containerformcheckcode {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 84.1vh;
+}
+
+.containerformnewpassword {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 84.1vh;
+}
+
+.display-flex {
+    display: flex;
+}
+
 .containerinput {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-bottom: 40px;
 }
 
@@ -67,6 +114,7 @@ header h1 {
     z-index: 1;
     position: relative;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .containerbutton a:hover {

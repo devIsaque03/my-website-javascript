@@ -24,23 +24,94 @@
     </header>
 
     <form>
-        <div class="containerform">
+        <div class="containerformlogin"> <!-- -------------------------------------------------------------------------------- -->
             <div class="containerinput">
-                <input type="email" name="login" placeholder="EMAIL" id="login" required=""/>
+                <input type="email" name="login" placeholder="EMAIL" id="login" required/>
                 <input type="password" name="password" placeholder="PASSWORD" id="password" required/>
             </div>
             <div class="containerbutton">
                 <button id="meuBotao">LOGIN</button>
-                <!-- <a href="./assets/html/main.html">
-                    LOGIN
-                </a> -->
+            </div>
+            <div class="containerhelp">
+                <a href="" id="createaccount">
+                    Create an account ?
+                </a>
+                <a href="" class="forgotpassword">
+                    Forgot password?
+                </a>
+            </div>
+        </div>
+
+        <div class="containerformcreate"> <!-- -------------------------------------------------------------------------------- -->
+            <div class="containerinput">
+                <input name="username" placeholder="USERNAME" id="createusername" required />
+                <input type="email" name="login" placeholder="EMAIL" id="createlogin" required/>
+                <input type="password" name="password" placeholder="PASSWORD" id="createpassword" required/>
+                <input type="password" name="password" placeholder="REPEAT PASSWORD" id="repeatcreatepassword" required/>
+
+                <div>
+                    <p id="pusername">Esse usuário já existe</p>
+                    <p id="pemail">Esse Email já está em uso</p>
+                    <p id="pissmall">Senha no mínimo com 8 caracteres</p>
+                    <p id="pnorepeat">Suas senhas não estão iguais</p>
+                </div>
+
+            </div>
+            <div class="containerbutton">
+                <button id="create">Create</button>
+            </div>
+            <div class="containerhelp">
+                <a href="" class="backlogin">
+                    Login
+                </a>
+            </div>
+        </div>
+
+        <div class="containerformsendcode"> <!-- -------------------------------------------------------------------------------- -->
+            <div class="containerinput">
+                <p>Enter your account EMAIL</p>
+                <input type="email" name="login" placeholder="EMAIL" id="emailcount" required/>
+            </div>
+            <div class="containerbutton">
+                <button class="send">Send</button>
             </div>
             <div class="containerhelp">
                 <a href="">
-                    Criar uma conta ?
+                    Login !
+                </a>
+            </div>
+        </div>
+
+        <div class="containerformcheckcode"> <!-- -------------------------------------------------------------------------------- -->
+            <div class="containerinput">
+                <p>We send the code to your email</p>
+                <input name="login" placeholder="CODE" id="code" required/>
+            </div>
+            <div class="containerbutton">
+                <button class="check">Check</button>
+            </div>
+            <div class="containerhelp">
+                <a href="" class="backemail">
+                   Back !
                 </a>
                 <a href="">
-                    Esqueceu a senha ?
+                    Login !
+                </a>
+            </div>
+        </div>
+
+        <div class="containerformnewpassword"> <!-- -------------------------------------------------------------------------------- -->
+            <div class="containerinput">
+                <p>Enter your new password</p>
+                <input type="password" name="login" placeholder="NEW PASSWORD" id="newpassword" required/>
+                <input type="password" name="login" placeholder="REPEAT PASSWORD" id="repeatpassword" required/>
+            </div>
+            <div class="containerbutton">
+                <button class="replace">To replace</button>
+            </div>
+            <div class="containerhelp">
+                <a href="">
+                    Login !
                 </a>
             </div>
         </div>
@@ -49,7 +120,7 @@
     <footer> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
         <p>Feito por Isaque</p>
         <p><span>Personal management</span> &copy; 2024</p>
-        
+
     </footer>
 
     <script src="./assets/javascript/index.js"></script>
