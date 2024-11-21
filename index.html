@@ -24,7 +24,7 @@
     </header>
 
     <form>
-        <div class="containerformlogin"> <!-- -------------------------------------------------------------------------------- -->
+        <div class="containerformlogin display-flex"> <!-- -------------------------------------------------------------------------------- -->
             <div class="containerinput">
                 <input type="email" name="login" placeholder="EMAIL" id="login" required/>
                 <input type="password" name="password" placeholder="PASSWORD" id="password" required/>
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <div class="containerformcreate"> <!-- -------------------------------------------------------------------------------- -->
+        <div class="containerformcreate display-none"> <!-- -------------------------------------------------------------------------------- -->
             <div class="containerinput">
                 <input name="username" placeholder="USERNAME" id="createusername" required />
                 <input type="email" name="login" placeholder="EMAIL" id="createlogin" required/>
@@ -50,10 +50,10 @@
                 <input type="password" name="password" placeholder="REPEAT PASSWORD" id="repeatcreatepassword" required/>
 
                 <div>
-                    <p id="pusername">Esse usuário já existe</p>
-                    <p id="pemail">Esse Email já está em uso</p>
-                    <p id="pissmall">Senha no mínimo com 8 caracteres</p>
-                    <p id="pnorepeat">Suas senhas não estão iguais</p>
+                    <p class="pusername display-none">Esse usuário já existe</p>
+                    <p class="pemail display-none">Esse Email já está em uso</p>
+                    <p class="pissmall display-none">Senha no mínimo com 8 caracteres</p>
+                    <p class="pnorepeat display-none">Suas senhas não estão iguais</p>
                 </div>
 
             </div>
@@ -67,7 +67,7 @@
             </div>
         </div>
 
-        <div class="containerformsendcode"> <!-- -------------------------------------------------------------------------------- -->
+        <div class="containerformsendcode display-none"> <!-- -------------------------------------------------------------------------------- -->
             <div class="containerinput">
                 <p>Enter your account EMAIL</p>
                 <input type="email" name="login" placeholder="EMAIL" id="emailcount" required/>
@@ -82,7 +82,7 @@
             </div>
         </div>
 
-        <div class="containerformcheckcode"> <!-- -------------------------------------------------------------------------------- -->
+        <div class="containerformcheckcode display-none"> <!-- -------------------------------------------------------------------------------- -->
             <div class="containerinput">
                 <p>We send the code to your email</p>
                 <input name="login" placeholder="CODE" id="code" required/>
@@ -100,7 +100,7 @@
             </div>
         </div>
 
-        <div class="containerformnewpassword"> <!-- -------------------------------------------------------------------------------- -->
+        <div class="containerformnewpassword display-none"> <!-- -------------------------------------------------------------------------------- -->
             <div class="containerinput">
                 <p>Enter your new password</p>
                 <input type="password" name="login" placeholder="NEW PASSWORD" id="newpassword" required/>
@@ -123,6 +123,6 @@
 
     </footer>
 
-    <script src="./assets/javascript/index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

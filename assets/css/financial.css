@@ -123,3 +123,107 @@
 .graficos {
     padding-bottom: 30px;
 }
+
+
+.movementsaddinit {
+    display: flex;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.movementsaddinit img {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.movementsaddinit img:hover {
+    background-color: #cfcfcf;
+    border-radius: 25px;
+}
+
+.containerMovementsFinancial h1 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#formularioaddmovement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formularioaddmovement div {
+    display: flex;
+    width: 40%;
+    margin-bottom: 10px;
+    justify-content: start;
+}
+
+#formularioaddmovement div label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+#formularioaddmovement button {
+    width: 80px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.display-none {
+    display: none;
+}

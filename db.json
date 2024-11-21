@@ -1,33 +1,21 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1c26",
+      "username": "Visitante",
+      "email": "visita@gmail.com",
+      "password": "visita"
+    },
+    {
+      "id": "d29e",
       "username": "Isaque",
       "email": "isaqueacs7@gmail.com",
       "password": "admin"
-    },
-    {
-      "id": 2,
-      "username": "Visitante",
-      "email": "visita@gmail.com",
-      "password": "visit"
-    },
-    {
-      "username": "general",
-      "email": "teste@gmail.com",
-      "password": "12341234",
-      "id": "a572"
-    },
-    {
-      "id": "1e68",
-      "username": "teste2",
-      "email": "teste2@gmail.com",
-      "password": "12341234"
     }
   ],
   "code": [
     {
-      "foreignkey": "1",
+      "foreignkey": "d29e",
       "code": ""
     }
   ],
@@ -35,17 +23,15 @@
   "financial": [
     {
       "id": 1,
-      "foreignkey": "1",
+      "foreignkey": "d29e",
       "initbalance": "0"
     }
   ],
   "movement": [
     {
       "id": 1,
-      "foreignkey": "1",
-      "day": 3,
-      "month": 10,
-      "year": "2024",
+      "foreignkey": "d29e",
+      "date": "2024-10-03",
       "object": "Game",
       "description": "Buying Subsistence",
       "type": "output",
@@ -55,10 +41,8 @@
     },
     {
       "id": 2,
-      "foreignkey": "1",
-      "day": 5,
-      "month": 10,
-      "year": "2024",
+      "foreignkey": "d29e",
+      "date": "2024-10-05",
       "object": "Transport",
       "description": "Filling up the car",
       "type": "output",
@@ -68,10 +52,8 @@
     },
     {
       "id": 3,
-      "foreignkey": "1",
-      "day": 7,
-      "month": 10,
-      "year": "2024",
+      "foreignkey": "d29e",
+      "date": "2024-10-07",
       "object": "Credit card",
       "description": "No description for now",
       "type": "output",
@@ -81,10 +63,8 @@
     },
     {
       "id": 4,
-      "foreignkey": "1",
-      "day": 7,
-      "month": 10,
-      "year": "2024",
+      "foreignkey": "d29e",
+      "date": "2024-10-07",
       "object": "Academy",
       "description": "Monthly fee",
       "type": "output",
@@ -94,10 +74,8 @@
     },
     {
       "id": 5,
-      "foreignkey": "1",
-      "day": 12,
-      "month": 10,
-      "year": "2024",
+      "foreignkey": "d29e",
+      "date": "2024-10-12",
       "object": "Exit",
       "description": "Eating with your girlfriend at the bakery",
       "type": "output",
@@ -107,10 +85,8 @@
     },
     {
       "id": 6,
-      "foreignkey": "1",
-      "day": 12,
-      "month": 10,
-      "year": "2024",
+      "foreignkey": "d29e",
+      "date": "2024-10-12",
       "object": "IPTV",
       "description": "Pay the TOM",
       "type": "output",
@@ -120,10 +96,8 @@
     },
     {
       "id": 7,
-      "foreignkey": "1",
-      "day": 16,
-      "month": 10,
-      "year": "2024",
+      "foreignkey": "d29e",
+      "date": "2024-10-16",
       "object": "Exit",
       "description": "Sister-in-law's birthday",
       "type": "output",
@@ -133,10 +107,8 @@
     },
     {
       "id": 8,
-      "foreignkey": "1",
-      "day": 19,
-      "month": 10,
-      "year": "2024",
+      "foreignkey": "d29e",
+      "date": "2024-10-19",
       "object": "Transport",
       "description": "Filling up the car",
       "type": "output",
@@ -146,10 +118,8 @@
     },
     {
       "id": 9,
-      "foreignkey": "1",
-      "day": 28,
-      "month": 10,
-      "year": "2024",
+      "foreignkey": "d29e",
+      "date": "2024-10-28",
       "object": "Study",
       "description": "College tuition",
       "type": "output",
@@ -161,7 +131,7 @@
   "source": [
     {
       "id": 1,
-      "foreignkey": "1",
+      "foreignkey": "d29e",
       "bank": "Nubank",
       "name": "Nu Current",
       "pix": true,
@@ -171,7 +141,7 @@
     },
     {
       "id": 2,
-      "foreignkey": "1",
+      "foreignkey": "d29e",
       "bank": "Itau",
       "name": "Itau savings",
       "pix": true,
@@ -181,7 +151,7 @@
     },
     {
       "id": 3,
-      "foreignkey": "1",
+      "foreignkey": "d29e",
       "bank": "Mercado Pago",
       "name": "MP trade",
       "pix": true,

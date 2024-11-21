@@ -26,6 +26,11 @@ document.removeChild(/* element */)
 document.appendChild(/* element */) // adiciona um elemento
 document.replaceChild(/*new element, old element */) // substitui um elemento
 
+document.createElement()
+document.removeChild()
+document.appendChild()
+document.replaceChild()
+
 // ------------------------------------------
 
 const meuElemento = document.getElementById("meu-elemento").classList.toggle("dark-mode")

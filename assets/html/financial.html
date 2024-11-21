@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,191 +57,198 @@
        
         <div name="settings" class="settings"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
             <a href="">
-                <img src="../img/profile.png" height="50px"/>
+                <img src="../img/profile.png" height="50px" />
             </a>
             <a href="">
-                <img src="../img/settings.png" height="50px"/>            
+                <img src="../img/settings.png" height="50px" />            
             </a>
         </div>
     </div>
 
-    <div name="summaryFinancial" class="summaryFinancial"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
-        <h1>Financial</h1>
-
-        <ul>
-            <div class="containerfinance1">
-                <li>
-                    <h3>Gross Equity</h3>
-                    <p>
-                        <span name="money1">R$</span>
-                        <span name="number1" class="numbers">0.00</span>
-                    </p>
-                </li>
-                <li>
-                    <h3>financial assets</h3>
-                    <p>
-                        <span name="money2">R$</span>
-                        <span name="number2"  class="numbers">0.00</span>
-                    </p>
-                </li>
+    <div class="containerSummaryFinancial display-none">
+        <div name="summaryFinancial" class="summaryFinancial"> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+            <h1>Financial</h1>
+    
+            <ul>
+                <div class="containerfinance1">
+                    <li>
+                        <h3>Gross Equity</h3>
+                        <p>
+                            <span name="money1">R$</span>
+                            <span name="number1" class="numbers">0.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>financial assets</h3>
+                        <p>
+                            <span name="money2">R$</span>
+                            <span name="number2"  class="numbers">0.00</span>
+                        </p>
+                    </li>
+                </div>
+                <div class="containerfinance2">
+                    <li>
+                        <h3>balance</h3>
+                        <P>
+                            <span name="money3">R$</span>
+                            <span name="number3"  class="numbers">0.00</span>
+                        </P>
+                    </li>
+                    <li>
+                        <h3>invested</h3>
+                        <p>
+                            <span name="money4">R$</span>
+                            <span name="number4" class="numbers">5.000</span>  
+                        </p>
+                    </li>
+                </div>
+                <div class="containerfinance3">
+                    <li>
+                        <h3>Acc receivable</h3>
+                        <p>
+                            <span name="money4">R$</span>
+                            <span name="number4"  class="numbers">0.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Acc payable</h3>
+                        <p>
+                            <span name="money5">R$</span>
+                            <span name="number5"  class="numbers">0.00</span>
+                        </p>
+                    </li>
+                </div>
+                <div class="containerfinance5">
+                    <li>
+                        <h3>Appreciation</h3>
+                        <p>
+                            <span name="money5">R$</span>
+                            <span name="number5"  class="numbers">125.00</span>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Dividends</h3>
+                        <p>
+                            <span name="money4">R$</span>
+                            <span name="number4" class="numbers">0.00</span> 
+                        </p>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    
+        <section class="graficos">
+            <p>Gráficos</p>
+        </section>
+    
+        <section class="containermovements"> <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            <div class="containerconfig">
+                <h1>Movement</h1>
+                <div>
+                    <button><img src="../img/settings.png" height="50px"></button>
+                    <button><img src="../img/add.png" height="50px" id="addmovements"></button>
+                </div>
             </div>
-            <div class="containerfinance2">
-                <li>
-                    <h3>balance</h3>
-                    <P>
-                        <span name="money3">R$</span>
-                        <span name="number3"  class="numbers">0.00</span>
-                    </P>
-                </li>
-                <li>
-                    <h3>invested</h3>
-                    <p>
-                        <span name="money4">R$</span>
-                        <span name="number4" class="numbers">5.000</span>  
-                    </p>
-                </li>
-            </div>
-            <div class="containerfinance3">
-                <li>
-                    <h3>Acc receivable</h3>
-                    <p>
-                        <span name="money4">R$</span>
-                        <span name="number4"  class="numbers">0.00</span>
-                    </p>
-                </li>
-                <li>
-                    <h3>Acc payable</h3>
-                    <p>
-                        <span name="money5">R$</span>
-                        <span name="number5"  class="numbers">0.00</span>
-                    </p>
-                </li>
-            </div>
-            <div class="containerfinance5">
-                <li>
-                    <h3>Appreciation</h3>
-                    <p>
-                        <span name="money5">R$</span>
-                        <span name="number5"  class="numbers">125.00</span>
-                    </p>
-                </li>
-                <li>
-                    <h3>Dividends</h3>
-                    <p>
-                        <span name="money4">R$</span>
-                        <span name="number4" class="numbers">0.00</span> 
-                    </p>
-                </li>
-            </div>
-        </ul>
+    
+            <table>
+                <thead>
+                    <tr class="tabletitle">
+                        <th class="date">Date</th>
+                        <th class="object">Object</th>
+                        <th class="description">Description</th>
+                        <th class="source">Source</th>
+                        <th class="paymentmethod">Payment method</th>
+                        <th class="value">Value</th>
+                    </tr>
+                </thead>
+                <tbody class="bodymovements">
+    
+                </tbody>
+            </table>
+        </section>
+    
+        <section class="report">
+            <a href="">
+                <p>Report</p>
+            </a>
+        </section>
     </div>
 
-    <section class="graficos">
-        <p>Gráficos</p>
-    </section>
+    <div class="containermain containerMovementsFinancial">
 
-    <section class="containermovements"> <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-        <div class="containerconfig">
-            <h1>Movement</h1>
-            <div>
-                <button><img src="../img/settings.png" height="50px"></button>
-                <button><img src="../img/add.png" height="50px"></button>
-            </div>
+        <div class="movementsaddinit">
+            <h1>Add Movements</h1>
+            <a href=""  id="backSummaryFinancial">
+                <img src="../img/tests/109617.png" height="50px"/>
+            </a>
         </div>
 
-        <table>
-            <thead>
-                <tr class="tabletitle">
-                    <th class="date">Date</th>
-                    <th class="object">Object</th>
-                    <th class="description">Description</th>
-                    <th class="source">Source</th>
-                    <th class="paymentmethod">Payment method</th>
-                    <th class="value">Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>03/10/2024</td>
-                    <td>Game</td>
-                    <td>Buying "Subsistence"</td>
-                    <td>Nubank</td> 
-                    <td>Pix</td>
-                    <td class="money"><span>R$</span><span>- 7.70</span></td>
-                </tr>
-                <tr>
-                    <td>05/10/2024</td>
-                    <td>Transport</td>
-                    <td>Filling up the car</td>
-                    <td>Nubank</td>
-                    <td>Debit</td>
-                    <td class="money"><span>R$</span><span>- 32.60</span></td>
-                </tr>
-                <tr>
-                    <td>07/10/2024</td>
-                    <td>Credit card</td>
-                    <td>No description for now</td>
-                    <td>Nubank</td>
-                    <td>Pix</td>
-                    <td class="money"><span>R$</span><span>- 44.16</span></td>
-                </tr>
-                <tr>
-                    <td>07/10/2024</td>
-                    <td>Academy</td>
-                    <td>Monthly fee</td>
-                    <td>Nubank</td>
-                    <td>Pix</td>
-                    <td class="money"><span>R$</span><span>- 14.19</span></td>
-                </tr>
-                <tr>
-                    <td>12/10/2024</td>
-                    <td>Exit</td>
-                    <td>Eating with your girlfriend at the bakery</td>
-                    <td>Nubank</td>
-                    <td>Pix</td>
-                    <td class="money"><span>R$</span><span>- 2.07</span></td>
-                </tr>
-                <tr>
-                    <td>12/10/2024</td>
-                    <td>IPTV</td>
-                    <td>Pay the TOM</td>
-                    <td>Nubank</td>
-                    <td>Pix</td>
-                    <td class="money"><span>R$</span><span>- 3.12</span></td>
-                </tr>
-                <tr>
-                    <td>16/10/2024</td>
-                    <td>Exit</td>
-                    <td>Sister-in-law's birthday</td>
-                    <td>Nubank</td>
-                    <td>Pix</td>
-                    <td class="money"><span>R$</span><span>- 13.33</span></td>
-                </tr>
-                <tr>
-                    <td>19/10/2024</td>
-                    <td>Transport</td>
-                    <td>Filling up the car</td>
-                    <td>Nubank</td>
-                    <td>Debit</td>
-                    <td class="money"><span>R$</span><span>- 26.35</span></td>
-                </tr>
-                <tr>
-                    <td>28/10/2024</td>
-                    <td>Study</td>
-                    <td>College tuition</td>
-                    <td>Nubank</td>
-                    <td>Pix</td>
-                    <td class="money"><span>R$</span><span>- 34.45</span></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <form id="formularioaddmovement">
+            <div class="containerinput01">
+                <label for="data">Selecione uma Date:</label>
+                <input type="date" id="data" name="data" required>
+                <br><br>
+    
+                <label for="selecttype">Object: </label>
+                <select name="selecttype">
+                    <option value="Game">Game</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Academy">Academy</option>
+                    <option value="Exit">Exit</option>
+                    <option value="Iptv">Iptv</option>
+                    <option value="Study">Study</option>
+                </select>
+                <br><br>
+            </div>
 
-    <section class="report">
-        <a href="">
-            <p>Report</p>
-        </a>
-    </section>
+            <div class="containerinput02">
+                <label for="nome">Description:</label>
+                <input type="text" id="nome" name="nome" placeholder="Description" required>
+                <br><br>
+            </div>
+
+            <div class="containerinput03">
+                <label for="selecttype">Type: </label>
+                <select name="selecttype">
+                    <option value="output">output</option>
+                    <option value="input">input</option>
+                </select>
+                <br><br>
+    
+    
+                <label for="selecttype">Source: </label>
+                <select name="selecttype">
+                    <option value="0">Carteira</option>
+                    <option value="1">Nubank</option>
+                    <option value="2">Itau</option>
+                    <option value="3">Mercado Pago</option>
+                </select>
+                <br><br>
+    
+                <label for="selecttype">Payment Method: </label>
+                <select name="selecttype">
+                    <option value="output">output</option>
+                    <option value="input">input</option>
+                </select>
+                <br><br>
+            </div>
+
+            <div class="containerinput04">
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" name="valor" placeholder="R$ 0,00" required>
+                <br><br>
+            </div>
+
+            <button type="submit">To add</button>
+        </form>
+    </div>
+
+
+
+    </div>
+
+
 
     <footer> <!-- --------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -267,6 +274,7 @@
         
     </footer>
     
-
+    <script src="../javascript/financialrender.js"></script>
+    <script src="../javascript/financialaddmovements.js"></script>
 </body>
 </html>
