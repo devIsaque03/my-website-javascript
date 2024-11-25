@@ -1,24 +1,26 @@
 // alert("Login: visita@gmail.com\npassword: visita")
 
-const button = document.getElementById('meuBotao');
+// API URL
 const URL = 'http://localhost:3000/users';
 
-var master = 0;
-
+const button = document.getElementById('meuBotao');
 const containerlogin = document.getElementsByClassName("containerformlogin")[0];
 const containercreate = document.getElementsByClassName("containerformcreate")[0];
 const containersend = document.getElementsByClassName("containerformsendcode")[0];
 const containercheck = document.getElementsByClassName("containerformcheckcode")[0];
 const containernewpassword = document.getElementsByClassName("containerformnewpassword")[0];
 
+// Login verification event
 button.addEventListener('click', async (event) => {
     event.preventDefault();
 
     const inputlogin = document.getElementById('login').value;
     const inputpassword = document.getElementById('password').value;
 
+    // Chama função da API
     const users = await chamarAPI ();   
 
+    // 
     if (users && users.length > 0) {
         const user = users.find(user => user.email === inputlogin && user.password === inputpassword);
 

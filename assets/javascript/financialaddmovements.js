@@ -14,27 +14,40 @@ back.addEventListener('click', (event) => {
 const valorInput = document.getElementById('valor');
 const resultado = document.getElementById('resultado');
 
-// Formatar entrada enquanto o usuário digita
+// Format input as the user types
 valorInput.addEventListener('input', function () {
     let valor = valorInput.value;
 
-    // Remove tudo que não for número
+    // Remove everything that is not a number
     valor = valor.replace(/\D/g, '');
 
-    // Adiciona zeros caso o valor seja menor que 1 real
-    valor = (valor / 100).toFixed(2); // Divide por 100 e mantém duas casas decimais
+    // Adds zeros if the value is less than 1 real
+    valor = (valor / 100).toFixed(2); // Divide by 100 and keep two decimal places
 
-    // Formata como moeda (R$)
+    // Format as currency (R$)
     valor = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-    // Atualiza o campo de entrada
+    // Updates the input field
     valorInput.value = valor;
 });
 
-// Capturar e exibir valor formatado no envio
+// Capture and display formatted value on submission
 document.getElementById('formulario').addEventListener('submit', function (event) {
     event.preventDefault();
 
     const valorFormatado = valorInput.value;
     resultado.textContent = `Valor inserido: ${valorFormatado}`;
 });
+
+// Call event on click "addmovementsbutton"
+const buttonaddmovements = document.getElementById('addmovementsbutton');
+
+buttonaddmovements.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    // taking values
+    const valor = document.getElementById('valor').value;
+    const selectpaymentmethod = document.getElementById('selectpaymentmethod').value;
+    const selectsource = document.getElementById('selectsource').value;
+    const selecttype = document.getElementById('selecttype').value;
+})

@@ -210,7 +210,7 @@
 
             <div class="containerinput03">
                 <label for="selecttype">Type: </label>
-                <select name="selecttype">
+                <select name="selecttype" id="selecttype">
                     <option value="output">output</option>
                     <option value="input">input</option>
                 </select>
@@ -218,7 +218,7 @@
     
     
                 <label for="selecttype">Source: </label>
-                <select name="selecttype">
+                <select name="selectsource" id="selectsource">
                     <option value="0">Carteira</option>
                     <option value="1">Nubank</option>
                     <option value="2">Itau</option>
@@ -227,9 +227,11 @@
                 <br><br>
     
                 <label for="selecttype">Payment Method: </label>
-                <select name="selecttype">
-                    <option value="output">output</option>
-                    <option value="input">input</option>
+                <select name="selectpaymentmethod" id="selectpaymentmethod">
+                    <option value="Money">Dinheiro</option>
+                    <option value="Pix">Pix</option>
+                    <option value="Debit">Débito</option>
+                    <option value="Credit">Crédito</option>
                 </select>
                 <br><br>
             </div>
@@ -240,7 +242,7 @@
                 <br><br>
             </div>
 
-            <button type="submit">To add</button>
+            <button type="submit" id="addmovementsbutton">To add</button>
         </form>
     </div>
 

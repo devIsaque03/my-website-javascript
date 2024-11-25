@@ -147,10 +147,17 @@
     margin-bottom: 20px;
 }
 
+.containerMovementsFinancial {
+    display: flex;
+    flex-direction: column;
+}
+
 #formularioaddmovement {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin-top: 100px;
 }
 
 #formularioaddmovement div {
@@ -172,6 +179,10 @@
 #formularioaddmovement button {
     width: 80px;
     height: 50px;
+}
+
+#nome {
+    width: 70%;
 }
 
 
